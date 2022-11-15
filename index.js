@@ -103,8 +103,7 @@ var finances = [
     var min_index = null;    //both start from index 1 after the subtraction, i could put 1 directly wanted to avoid confusion
     
     for (var i=0; i<finances.length; i++)  {
-        
-            total+=finances[i][1];
+        total += finances[i][1];          //total amount
         }
     
     //starting from 1 so we can do the subtraction of the 1st month at index 0 and
@@ -117,7 +116,7 @@ var finances = [
         // in the same for-loop we check for max increase in profits
         if (monthly_change > max) {
             max = monthly_change;
-            max_index = i;    //easier to keep track of the index if we loop here 
+            max_index = i;    //easier to keep track of the index if inside the loop 
             
         }
         if (monthly_change < min)  {
