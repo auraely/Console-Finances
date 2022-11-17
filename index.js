@@ -130,8 +130,8 @@ var finances = [
     }   // sum of the monthly changes, i have used the list to loop trough, there was another way too without it
 
         console.log('Total months:', finances.length);
-        console.log('Total:', total);
-        console.log('Average change:', (sum_changes/changes.length).toFixed(2));
+        console.log(`Total: $${total}`);
+        console.log(`Average change: $${(sum_changes/changes.length).toFixed(2)}`);
         console.log(`Greatest increase in Profits: ${finances[max_index][0]} ($${max})`);
         console.log(`Greatest decrease in Profits: ${finances[min_index][0]} ($${min})`);
         
