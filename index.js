@@ -109,7 +109,7 @@ var finances = [
     //starting from 1 so we can do the subtraction of the 1st month at index 0 and
      //find the max/min in the same for-loop
     for (var i=1; i< finances.length; i++) {
-        monthly_change = finances[i][1] - finances[i-1][1];
+        var monthly_change = finances[i][1] - finances[i-1][1];
         changes.push(monthly_change)   //filling the array
         //console.log(monthly_change)   testing
      
@@ -127,7 +127,7 @@ var finances = [
         
     for (var i=0; i<changes.length; i++)  {
         sum_changes += changes[i];
-    }   // sum of the monthly changes, i have used the list to loop trough, there was another way too without it
+    }   // sum of the monthly changes, i have used the array to loop trough, there was another way too without it
 
         console.log('Total months:', finances.length);
         console.log(`Total: $${total}`);
